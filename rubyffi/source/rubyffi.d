@@ -20,7 +20,7 @@ mixin template rubyffi(string mod)  {
     
         private string _module(string mod) pure {
             import std.uni : toUpper;
-            immutable module_ = "module %s\n\textend FFI::Library\n\tffi_lib './lib%s.%s'\n%send";
+            immutable module_ = "module %s\n\textend FFI::Library\n\tffi_lib \"#{Dir.pwd}/lib%s.%s\"\n%send";
             immutable init = "\n\n%1$s::rt_init\n\nat_exit do\n\t%1$s::rt_term\nend";
             version(Windows) { return module_._fmt(mod.toUpper, mod, "dll", _body()); }
             version(linux) { return (module_ ~ init)._fmt(mod.toUpper, mod, "so", _body()); }
