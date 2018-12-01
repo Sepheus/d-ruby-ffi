@@ -1,0 +1,32 @@
+{
+	"name": "app",
+	"authors": [
+		"Sepheus"
+	],
+	"description": "Ruby FFI binding generator.",
+	"copyright": "Copyright © 2018, Sepheus",
+	"license": "MIT",
+	"sourceFiles" : ["../../rubyffi/source/rubyffi.d"],
+	"importPaths" : ["./source", "../../rubyffi/source"],
+	"configurations" : [
+	{
+	    "name" : "linux",
+	    "targetName": "app",
+	    "targetType": "dynamicLibrary",
+		"platforms" : ["linux"]
+	},
+	{
+	    "name" : "win",
+	    "targetName": "libapp",
+	    "targetType": "dynamicLibrary",
+		"platforms" : ["windows"],
+	},
+	{
+	    "name" : "bindgen",
+	    "targetName": "app",
+	    "targetType": "dynamicLibrary",
+	    "buildOptions" : ["syntaxOnly"],
+	    "versions" : ["bindgen"]
+	}
+	]
+}

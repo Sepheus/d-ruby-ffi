@@ -1,0 +1,1 @@
+dub build --config=bindgen --force --vquiet 2> app.rb

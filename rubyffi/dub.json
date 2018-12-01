@@ -1,0 +1,10 @@
+{
+	"name": "ruby-ffi",
+	"authors": [
+		"Sepheus"
+	],
+	"description": "Ruby FFI binding generator.",
+	"copyright": "Copyright © 2018, Sepheus",
+	"license": "MIT",
+	"targetType": "sourceLibrary"
+}
