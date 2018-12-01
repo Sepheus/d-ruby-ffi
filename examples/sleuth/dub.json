@@ -19,7 +19,7 @@
 	    "name" : "win",
 	    "targetName": "libapp",
 	    "targetType": "dynamicLibrary",
-		"platforms" : ["windows"],
+		"platforms" : ["windows"]
 	},
 	{
 	    "name" : "bindgen",
