@@ -10,3 +10,7 @@ Build & Run Instructions
 `./bindgen`
 
 `./main.rb`
+
+Benchmark
+------
+After executing the above commands you can also run `./benchmark` to see the Ruby performance vs the compiled D library.
