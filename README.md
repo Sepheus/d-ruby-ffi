@@ -3,6 +3,13 @@ Ruby-ffi
 
 Simple automatic D to Ruby-FFI binding generator.
 
+Installation
+-------
+
+`dub add-local rubyffi`
+
+Not required to run examples.
+
 How-To
 ------
 
